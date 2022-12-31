@@ -58,10 +58,6 @@ public class CRenderer implements GLSurfaceView.Renderer {
     private static final String A_POSITION = "a_Position";
     private int aPositionLocation;
 
-    private static final String U_PROJECTION = "u_Projection";
-    int uProjectionLocation;
-    private int aProjectionMatrixLocation;
-
     private float[] projectionMatrix = new float[16];
 
     public CRenderer(Context context) {
