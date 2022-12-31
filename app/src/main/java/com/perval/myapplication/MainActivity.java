@@ -14,6 +14,7 @@ public class MainActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         glSurfaceView = new GLSurfaceView(this);
+        glSurfaceView.setEGLContextClientVersion(2);
         glSurfaceView.setRenderer(new CRenderer(this));
         rendererSet = true;
         setContentView(glSurfaceView);
